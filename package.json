@@ -1,0 +1,22 @@
+{
+  "name": "pnpm-security-demo",
+  "version": "1.0.0",
+  "description": "Sample project managed by pnpm",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "lint:package-json": "pnpm exec npmPkgJsonLint ."
+  },
+  "dependencies": {
+    "aws-cdk": "2.1029.1"
+  },
+  "devDependencies": {
+    "npm-package-json-lint": "9.0.0"
+  },
+  "volta": {
+    "node": "22.20.0",
+    "pnpm": "10.17.1"
+  },
+  "packageManager": "pnpm@10.17.1"
+}
