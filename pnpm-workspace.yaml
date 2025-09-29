@@ -1,0 +1,3 @@
+shamefullyHoist: true
+minimumReleaseAge: 20160  # 2 week
+# minimumReleaseAgeExclude: 
