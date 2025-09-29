@@ -5,9 +5,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "preinstall": "node scripts/ensure-pnpm.js",
     "start": "node src/index.js",
-    "audit": "pnpm audit",
     "lint:package-json": "pnpm exec npmPkgJsonLint ."
   },
   "dependencies": {
