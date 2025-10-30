@@ -3,6 +3,6 @@
   "extends": [
     "config:base"
   ],
-  "stabilityDays": 3,
+  "minimumReleaseAge": "3 days",
   "prConcurrentLimit": 1
 }
