@@ -1,30 +1,19 @@
 # pnpm-security-demo
 
-pnpmを使ったサンプルプロジェクトです。Node.jsとpnpmがインストールされている前提です。
+「スクリプトを default で許可しない」かつ「リリース直後のバージョンの待機時間設定機能」を備える pnpm を活用したnpmサプライチェーン攻撃の予防環境の構築例です。
 
 ## セットアップ
 
-1. 依存関係をインストールします。
-   ```sh
-   pnpm install
-   ```
-   ※ ネットワーク制限がある場合はリトライしてください。
+Nodeのバージョン管理にはVoltaを利用しています
 
-2. サンプルコードを実行します。
-   ```sh
-   pnpm start
-   ```
-
-## セキュリティ確認
-
-依存関係の脆弱性を確認するには次のコマンドを実行します。
 ```sh
-pnpm audit
+corepack enable
+pnpm install
 ```
 
-## プロジェクト構成
-
-- `package.json`: pnpm用のプロジェクト定義
-- `pnpm-lock.yaml`: 依存関係のロックファイル
-- `src/index.js`: サンプルコード
-# npm-package-lock-sample
+## 構成内容
+- Node, pnpmのバージョン固定（`package.json`）
+- npm追加時のバージョン固定（`.npmrc`）
+- npmパッケージのバージョンlinter（`.npmpackagejsonlintrc.json`）
+- pnpm設定（`pnpm-workspace.yaml`）
+- renovate設定例（`.github/renovate.json`）
